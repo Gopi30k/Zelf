@@ -1,6 +1,3 @@
 # Zelf.com
 
-Web Project
-  Backend : Java Spring
-  FrontEnd : Bootstrap HTML, CSS
-  Database : MySQL
+Web Project Developed using Java Spring MVC with MySQL database and Bootstrap HTML & CSS
