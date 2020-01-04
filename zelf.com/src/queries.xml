@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+		http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-4.3.xsd
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd">
+
+<bean id="SQLFetch" class="com.zelf.DBhelper.ZelfDBquery">
+
+<property name="searchResource" value="select * from RESOURCE where username=? and password=?"></property>
+<property name="insertResource" value="INSERT INTO RESOURCE (firstname,lastname,username,password,EMAIL,gender,phonenumber,dob,address) VALUES (?,?,?,?,?,?,?,?,?)"></property>
+<property name="checkUsername" value="Select username from Resource"></property>
+<property name="updateResource" value="update Resource set firstname=?, lastname=?, username=?, email=?, phonenumber=?, address=?, bioInfo=? where resourceid=?"></property>
+</bean>
+</beans>
