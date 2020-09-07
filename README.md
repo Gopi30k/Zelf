@@ -1,2 +1,3 @@
-# Java_Pro
-Exploring Java World!
+# Zelf Portal
+
+CRUD application in Java Spring MVC
